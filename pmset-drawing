@@ -1,0 +1,29 @@
+#!/bin/sh
+#
+# pmset-drawing:
+# from what source is the power manager drawing?
+#
+# The known values are:
+#
+#   * "Now drawing from 'AC Power'"
+#   * "Now drawing from 'Battery Power'"
+#
+# Example:
+#
+#     pmset-drawing
+#     Now drawing from 'AC Power'
+#
+# See also:
+#
+#   * `pmset-drawing-ac`
+#   * `pmset-drawing-battery`
+#
+# Command: pmset-drawing
+# Version: 1.1.0
+# Created: 2015-06-30
+# Updated: 2016-02-09
+# License: GPL
+# Contact: Joel Parker Henderson (joel@joelparkerhenderson.com)
+##
+set -euf
+pmset -g ps | head -1

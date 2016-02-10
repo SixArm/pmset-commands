@@ -1,0 +1,21 @@
+#!/bin/sh
+#
+# pmset-drawing-ac: is the power manager drawing from AC power?
+#
+# Syntax:
+#
+#     pmset-drawing-ac
+#
+# Example:
+#
+#     pmset-drawing-ac && echo "yes" || echo "no"
+#
+# Command: pmset-drawing-ac
+# Version: 1.1.0
+# Created: 2015-06-30
+# Updated: 2016-02-09
+# License: GPL
+# Contact: Joel Parker Henderson (joel@joelparkerhenderson.com)
+##
+set -euf
+pmset -g ps | grep  -q " drawing from 'AC Power'"

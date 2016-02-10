@@ -1,0 +1,23 @@
+#!/bin/sh
+#
+# pmset-battery-percent:
+# show the internal battery percent charged.
+#
+# Syntax:
+#
+#     pmset-battery-percent
+#
+# Example:
+#
+#     $ pmset-battery-percent
+#     100
+#
+# Command: pmset-battery-percent
+# Version: 1.1.0
+# Created: 2015-07-01
+# Updated: 2016-02-09
+# License: GPL
+# Contact: Joel Parker Henderson (joel@joelparkerhenderson.com)
+##
+set -euf
+pmset -g batt | grep 'InternalBattery-0' | sed -n 's/.*[^[:digit:]]\([[:digit:]]\+\)%.*/\1/p'

@@ -1,0 +1,21 @@
+#!/bin/sh
+#
+# pmset-drawing-battery: is the power manager drawing from battery power?
+#
+# Syntax:
+#
+#     pmset-drawing-battery
+#
+# Example:
+#
+#     pmset-drawing-battery && echo "yes" || echo "no"
+#
+# Command: pmset-drawing-battery
+# Version: 1.1.0
+# Created: 2015-06-30
+# Updated: 2016-02-09
+# Contact: Joel Parker Henderson (joel@joelparkerhenderson.com)
+# License: GPL
+##
+set -euf
+pmset -g ps | grep  -q " drawing from 'Battery Power'"

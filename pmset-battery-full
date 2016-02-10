@@ -1,0 +1,23 @@
+#!/bin/sh
+#
+# pmset-battery-full:
+# is the internal battery fully charged?
+#
+# Syntax:
+#
+#     pmset-battery-full
+#
+# Example:
+#
+#     $ pmset-battery-full && echo "yes" || echo "no"
+#     yes
+#
+# Command: pmset-battery-full
+# Version: 1.1.0
+# Created: 2015-07-01
+# Updated: 2016-02-09
+# License: GPL
+# Contact: Joel Parker Henderson (joel@joelparkerhenderson.com)
+##
+set -euf
+pmset -g batt | grep 'InternalBattery-0' | grep -q '100%'
