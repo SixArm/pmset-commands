@@ -3,27 +3,37 @@
 # pmset-drawing:
 # from what source is the power manager drawing?
 #
-# The known values are:
+# Syntax:
 #
-#   * "Now drawing from 'AC Power'"
-#   * "Now drawing from 'Battery Power'"
+#     pmset-drawing
 #
 # Example:
 #
 #     pmset-drawing
 #     Now drawing from 'AC Power'
 #
-# See also:
+# The known values are:
 #
-#   * `pmset-drawing-ac`
+#   * "Now drawing from 'AC Power'"
+#   * "Now drawing from 'Battery Power'"
+#
+# These commands are all related:
+#
+#   * `pmset-battery-full`
+#   * `pmset-battery-percent`
+#   * `pmset-drawing`
+#   * `pmset-draing-ac`
 #   * `pmset-drawing-battery`
+#   * `pmset-powerful`
 #
-# Command: pmset-drawing
-# Version: 1.1.0
-# Created: 2015-06-30
-# Updated: 2016-02-09
-# License: GPL
-# Contact: Joel Parker Henderson (joel@joelparkerhenderson.com)
+# ## Tracking
+#
+#   * Command: pmset-drawing
+#   * Version: 1.1.0
+#   * Created: 2015-06-30
+#   * Updated: 2017-11-01
+#   * License: GPL
+#   * Contact: Joel Parker Henderson (joel@joelparkerhenderson.com)
 ##
 set -euf
 pmset -g ps | head -1

@@ -1,16 +1,15 @@
 #!/bin/sh
 #
-# pmset-battery-percent:
-# show the internal battery percent charged.
+# pmset-powerful: 
+# is the power manager ready for powerful work?
 #
 # Syntax:
 #
-#     pmset-battery-percent
+#     pmset-powerful
 #
 # Example:
 #
-#     $ pmset-battery-percent
-#     100
+#     pmset-drawing-ac && echo "yes" || echo "no"
 #
 # These commands are all related:
 #
@@ -23,12 +22,12 @@
 #
 # ## Tracking
 #
-#   * Command: pmset-battery-percent
-#   * Version: 1.1.0
-#   * Created: 2015-07-01
+#   * Command: pmset-drawing-ac
+#   * Version: 1.1.1
+#   * Created: 2015-06-30
 #   * Updated: 2017-11-01
 #   * License: GPL
 #   * Contact: Joel Parker Henderson (joel@joelparkerhenderson.com)
 ##
 set -euf
-pmset -g batt | grep 'InternalBattery-0' | sed -n 's/.*[^[:digit:]]\([[:digit:]]\+\)%.*/\1/p'
+pmset-drawing-ac && pmset-battery-full

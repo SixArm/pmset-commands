@@ -1,6 +1,7 @@
 #!/bin/sh
 #
-# pmset-drawing-battery: is the power manager drawing from battery power?
+# pmset-drawing-battery: 
+# is the power manager drawing from battery power?
 #
 # Syntax:
 #
@@ -10,12 +11,23 @@
 #
 #     pmset-drawing-battery && echo "yes" || echo "no"
 #
-# Command: pmset-drawing-battery
-# Version: 1.1.0
-# Created: 2015-06-30
-# Updated: 2016-02-09
-# Contact: Joel Parker Henderson (joel@joelparkerhenderson.com)
-# License: GPL
+# These commands are all related:
+#
+#   * `pmset-battery-full`
+#   * `pmset-battery-percent`
+#   * `pmset-drawing`
+#   * `pmset-draing-ac`
+#   * `pmset-drawing-battery`
+#   * `pmset-powerful`
+#
+# ## Tracking
+#
+#   * Command: pmset-drawing-battery
+#   * Version: 1.1.1
+#   * Created: 2015-06-30
+#   * Updated: 2016-11-01
+#   * License: GPL
+#   * Contact: Joel Parker Henderson (joel@joelparkerhenderson.com)
 ##
 set -euf
 pmset -g ps | grep  -q " drawing from 'Battery Power'"

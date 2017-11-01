@@ -12,12 +12,23 @@
 #     $ pmset-battery-full && echo "yes" || echo "no"
 #     yes
 #
-# Command: pmset-battery-full
-# Version: 1.1.0
-# Created: 2015-07-01
-# Updated: 2016-02-09
-# License: GPL
-# Contact: Joel Parker Henderson (joel@joelparkerhenderson.com)
+# These commands are all related:
+#
+#   * `pmset-battery-full`
+#   * `pmset-battery-percent`
+#   * `pmset-drawing`
+#   * `pmset-draing-ac`
+#   * `pmset-drawing-battery`
+#   * `pmset-powerful`
+#
+# ## Tracking
+#
+#   * Command: pmset-battery-full
+#   * Version: 1.1.1
+#   * Created: 2015-07-01
+#   * Updated: 2017-11-01
+#   * License: GPL
+#   * Contact: Joel Parker Henderson (joel@joelparkerhenderson.com)
 ##
 set -euf
 pmset -g batt | grep 'InternalBattery-0' | grep -q '100%'
