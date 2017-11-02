@@ -24,11 +24,11 @@
 # ## Tracking
 #
 #   * Command: pmset-battery-full
-#   * Version: 2.0.0
+#   * Version: 2.0.1
 #   * Created: 2015-07-01
 #   * Updated: 2017-11-02
 #   * License: GPL
 #   * Contact: Joel Parker Henderson (joel@joelparkerhenderson.com)
 ##
 set -euf
-pmset -g batt | grep 'InternalBattery-0 ' | grep -qm1 '100%'
+pmset -g batt | grep -qm1 'InternalBattery-0 .*100%'

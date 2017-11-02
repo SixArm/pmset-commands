@@ -29,11 +29,11 @@
 # ## Tracking
 #
 #   * Command: pmset-drawing
-#   * Version: 2.0.0
+#   * Version: 2.0.1
 #   * Created: 2015-06-30
 #   * Updated: 2017-11-02
 #   * License: GPL
 #   * Contact: Joel Parker Henderson (joel@joelparkerhenderson.com)
 ##
 set -euf
-pmset -g ps | sed -n "s/Now drawing from '\(.\+\).*'/\1/p"
+pmset -g ps | sed -n "s/^Now drawing from '\(.\+\).*'/\1/p"

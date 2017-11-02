@@ -24,11 +24,11 @@
 # ## Tracking
 #
 #   * Command: pmset-battery-percent
-#   * Version: 2.0.0
+#   * Version: 2.0.1
 #   * Created: 2015-07-01
 #   * Updated: 2017-11-02
 #   * License: GPL
 #   * Contact: Joel Parker Henderson (joel@joelparkerhenderson.com)
 ##
 set -euf
-pmset -g batt | grep 'InternalBattery-0 ' | sed -n 's/.*[^[:digit:]]\([[:digit:]]\+\)%.*/\1/p'
+pmset -g batt | sed -n 's/.*InternalBattery-0 .*[^[:digit:]]\([[:digit:]]\+\)%.*/\1/p'

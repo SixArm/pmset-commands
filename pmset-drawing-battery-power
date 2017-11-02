@@ -9,7 +9,8 @@
 #
 # Example:
 #
-#     pmset-drawing-battery-power && echo "yes" || echo "no"
+#     $ pmset-drawing-battery-power && echo "yes" || echo "no"
+#     no
 #
 # These commands are all related:
 #
@@ -30,4 +31,4 @@
 #   * Contact: Joel Parker Henderson (joel@joelparkerhenderson.com)
 ##
 set -euf
-pmset -g ps | grep  -qm1 " drawing from 'Battery Power'"
+pmset -g ps | grep  -qm1 "^Now drawing from 'Battery Power'"
