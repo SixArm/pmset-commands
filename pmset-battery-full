@@ -31,4 +31,4 @@
 #   * Contact: Joel Parker Henderson (joel@joelparkerhenderson.com)
 ##
 set -euf
-pmset -g batt | grep 'InternalBattery-0 ' | grep -q '100%'
+pmset -g batt | grep 'InternalBattery-0 ' | grep -qm1 '100%'

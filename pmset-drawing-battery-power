@@ -30,4 +30,4 @@
 #   * Contact: Joel Parker Henderson (joel@joelparkerhenderson.com)
 ##
 set -euf
-pmset -g ps | grep  -q " drawing from 'Battery Power'"
+pmset -g ps | grep  -qm1 " drawing from 'Battery Power'"
