@@ -9,7 +9,8 @@
 #
 # Example:
 #
-#     pmset-drawing-ac-power && echo "yes" || echo "no"
+#     $ pmset-drawing-ac-power && echo "yes" || echo "no"
+#     yes
 #
 # These commands are all related:
 #
