@@ -9,13 +9,13 @@
 #
 # Example:
 #
-#     pmset-drawing
-#     Now drawing from 'AC Power'
+#     $ pmset-drawing
+#     AC Power
 #
 # The known values are:
 #
-#   * "Now drawing from 'AC Power'"
-#   * "Now drawing from 'Battery Power'"
+#   * AC Power
+#   * Battery Power
 #
 # These commands are all related:
 #

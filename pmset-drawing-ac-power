@@ -16,8 +16,8 @@
 #   * `pmset-battery-full`
 #   * `pmset-battery-percent`
 #   * `pmset-drawing`
-#   * `pmset-draing-ac`
-#   * `pmset-drawing-battery`
+#   * `pmset-drawing-ac-power`
+#   * `pmset-drawing-battery-power`
 #   * `pmset-powerful`
 #
 # ## Tracking
