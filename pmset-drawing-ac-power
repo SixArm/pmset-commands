@@ -5,11 +5,11 @@
 #
 # Syntax:
 #
-#     pmset-drawing-ac
+#     pmset-drawing-ac-power
 #
 # Example:
 #
-#     pmset-drawing-ac && echo "yes" || echo "no"
+#     pmset-drawing-ac-power && echo "yes" || echo "no"
 #
 # These commands are all related:
 #
@@ -22,10 +22,10 @@
 #
 # ## Tracking
 #
-#   * Command: pmset-drawing-ac
-#   * Version: 1.1.1
+#   * Command: pmset-drawing-ac-power
+#   * Version: 2.0.0
 #   * Created: 2015-06-30
-#   * Updated: 2016-11-01
+#   * Updated: 2017-11-02
 #   * License: GPL
 #   * Contact: Joel Parker Henderson (joel@joelparkerhenderson.com)
 ##

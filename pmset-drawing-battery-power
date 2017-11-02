@@ -5,27 +5,27 @@
 #
 # Syntax:
 #
-#     pmset-drawing-battery
+#     pmset-drawing-battery-power
 #
 # Example:
 #
-#     pmset-drawing-battery && echo "yes" || echo "no"
+#     pmset-drawing-battery-power && echo "yes" || echo "no"
 #
 # These commands are all related:
 #
 #   * `pmset-battery-full`
 #   * `pmset-battery-percent`
 #   * `pmset-drawing`
-#   * `pmset-draing-ac`
-#   * `pmset-drawing-battery`
+#   * `pmset-drawing-ac-power`
+#   * `pmset-drawing-battery-power`
 #   * `pmset-powerful`
 #
 # ## Tracking
 #
-#   * Command: pmset-drawing-battery
-#   * Version: 1.1.1
+#   * Command: pmset-drawing-battery-power
+#   * Version: 2.0.0
 #   * Created: 2015-06-30
-#   * Updated: 2016-11-01
+#   * Updated: 2017-11-02
 #   * License: GPL
 #   * Contact: Joel Parker Henderson (joel@joelparkerhenderson.com)
 ##
